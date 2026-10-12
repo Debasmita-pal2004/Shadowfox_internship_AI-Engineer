@@ -1,0 +1,29 @@
+# ------------------------------------
+# ENVIRONMENT VARIABLES (CRITICAL)
+# ------------------------------------
+# Never upload your API keys to GitHub!
+.env
+
+# ------------------------------------
+# PYTHON & VIRTUAL ENVIRONMENTS
+# ------------------------------------
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+venv/
+env/
+.venv/
+
+# ------------------------------------
+# STREAMLIT & SECRETS
+# ------------------------------------
+.streamlit/secrets.toml
+
+# ------------------------------------
+# OPERATING SYSTEM & IDE FILES
+# ------------------------------------
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
