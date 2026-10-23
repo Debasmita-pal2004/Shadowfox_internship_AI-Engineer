@@ -1,29 +1,32 @@
-# ------------------------------------
-# ENVIRONMENT VARIABLES (CRITICAL)
-# ------------------------------------
-# Never upload your API keys to GitHub!
-.env
 
-# ------------------------------------
-# PYTHON & VIRTUAL ENVIRONMENTS
-# ------------------------------------
-__pycache__/
-*.pyc
-*.pyo
-*.pyd
+# Python virtual environments
 venv/
-env/
 .venv/
+**/venv/
+**/.venv/
 
-# ------------------------------------
-# STREAMLIT & SECRETS
-# ------------------------------------
+# Python cache
+__pycache__/
+**/__pycache__/
+*.py[cod]
+
+# API keys and secrets
+.env
+.env.*
+!.env.example
 .streamlit/secrets.toml
 
-# ------------------------------------
-# OPERATING SYSTEM & IDE FILES
-# ------------------------------------
-.DS_Store
-Thumbs.db
+# IDE files
 .vscode/
 .idea/
+
+# Generated files
+*.log
+.pytest_cache/
+.coverage
+
+# Local uploaded documents and vector indexes
+Task2/sample_docs/
+Task2/data/uploads/
+Task2/faiss_index/
+Task2/vector_store/
