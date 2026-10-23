@@ -140,7 +140,7 @@ if st.button("✨ Generate with StudyMate AI", type="primary", use_container_wid
 
         except Exception as error:
             st.session_state.generated_result = ""
-            st.error("Sorry, server traffic is high right now (503). Please wait a few seconds and try clicking generate again.")
+            st.error("StudyMate could not generate a response. Check your connection and API key, then try again.")
             with st.expander("Technical details"):
                 st.caption(str(error))
 
